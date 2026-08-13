@@ -63,10 +63,12 @@ The goal: **copy, paste, solve, repeat** — without re-deriving the same logic 
 java-competitive-programming-utils/
 ├── src/
 │   ├── io/                 # Fast I/O utilities
-│   ├── datastructures/     # Segment Tree, DSU, Trie, Fenwick Tree, etc.
+│   ├── data-structures/     # Segment Tree, DSU, Trie, Fenwick Tree, etc.
 │   ├── graphs/             # Graph traversal & shortest-path algorithms
 │   ├── strings/            # String matching algorithms
-│   ├── maths/              # Number theory utilities
+│   ├── arrays/              # Array based algorithms
+|   ├── maths/              # Number theory utilities
+|   ├── dynamic-programming/              # Number theory utilities
 │   └── sorting/            # Sorting & searching utilities
 ├── examples/                # Sample usage & problems solved using these utils
 ├── README.md
@@ -100,16 +102,6 @@ public class Solution {
 ```
 
 > 💡 Tip: Most competitive judges only accept a single file. Copy the relevant class body directly into your submission file when needed.
-
----
-
-## 🛣️ Roadmap
-
-- [ ] Add persistent segment tree
-- [ ] Add Heavy-Light Decomposition
-- [ ] Add convex hull trick
-- [ ] Add more solved examples per topic
-- [ ] Add unit tests for all utilities
 
 ---
 
