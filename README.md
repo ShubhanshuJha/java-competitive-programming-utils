@@ -20,11 +20,11 @@ The goal: **copy, paste, solve, repeat** — without re-deriving the same logic 
 ## ✨ Features
 
 ### 🔢 Fast I/O
-- Custom `FastReader` / `FastWriter` for competitive-programming-speed input/output
-- BufferedReader/StreamTokenizer based templates
+- Custom fast reader/writer utilities for competitive-programming-speed input/output
+- `BufferedReader` / `StreamTokenizer` based templates
 
 ### 🌲 Data Structures
-- Segment Tree (with lazy propagation)
+- Segment Tree
 - Fenwick Tree / Binary Indexed Tree
 - Disjoint Set Union (Union-Find with path compression & union by rank)
 - Trie
@@ -45,15 +45,30 @@ The goal: **copy, paste, solve, repeat** — without re-deriving the same logic 
 - Trie-based string search
 - Suffix Array (basic)
 
-### 🧮 Number Theory & Math
+### 🔲 Array Algorithms
+- Prefix sum / difference array utilities
+- Two-pointer and sliding-window templates
+- Kadane's Algorithm
+
+### 🧮 Math
 - Sieve of Eratosthenes
 - Modular exponentiation & modular inverse
 - GCD / LCM utilities
 - Prime factorization
+- Basic combinatorics (nCr with modular arithmetic)
+
+### 🔁 Dynamic Programming
+- Common DP patterns (knapsack, LIS, LCS, digit DP)
+- Reusable memoization/tabulation helpers
 
 ### 📊 Sorting & Searching
 - Custom comparators and sorting utilities
 - Binary Search variants (lower bound, upper bound)
+
+### ⚙️ JVM Configuration
+- Ready-to-use heap, stack, and GC flags for large-constraint contests (e.g. Meta Hacker Cup)
+- Portable fix for deep recursion (`StackOverflowError`) across platforms
+- See [`jvm/CONFIG.md`](jvm/CONFIG.md) for full details
 
 ---
 
@@ -62,15 +77,17 @@ The goal: **copy, paste, solve, repeat** — without re-deriving the same logic 
 ```
 java-competitive-programming-utils/
 ├── src/
-│   ├── io/                 # Fast I/O utilities
-│   ├── data-structures/     # Segment Tree, DSU, Trie, Fenwick Tree, etc.
-│   ├── graphs/             # Graph traversal & shortest-path algorithms
-│   ├── strings/            # String matching algorithms
-│   ├── arrays/              # Array based algorithms
-|   ├── maths/              # Number theory utilities
-|   ├── dynamic-programming/              # Number theory utilities
-│   └── sorting/            # Sorting & searching utilities
-├── examples/                # Sample usage & problems solved using these utils
+│   ├── io/                       # Fast input/output utilities
+│   ├── data_structures/          # Segment Tree, DSU, Trie, Fenwick Tree, etc.
+│   ├── graphs/                   # Graph traversal, shortest paths, MST, etc.
+│   ├── strings/                  # String matching and processing algorithms
+│   ├── arrays/                   # Array-based algorithms and utilities
+│   ├── math/                     # Number theory, combinatorics, modular arithmetic, etc.
+│   ├── dynamic_programming/      # Common DP patterns and reusable utilities
+│   └── sorting/                  # Sorting, searching, and related utilities
+├── examples/                     # Sample usage and solved problems using the utilities
+├── jvm/                          # JVM configurations and commands for competitive programming
+│   └── CONFIG.md                 # Heap size, stack size, GC options, and platform-specific commands
 ├── README.md
 ├── LICENSE
 └── CONTRIBUTING.md
@@ -90,7 +107,7 @@ cd java-competitive-programming-utils
 Import any utility class directly into your solution file, e.g.:
 
 ```java
-import datastructures.DisjointSetUnion;
+import data_structures.DisjointSetUnion;
 
 public class Solution {
     public static void main(String[] args) {
