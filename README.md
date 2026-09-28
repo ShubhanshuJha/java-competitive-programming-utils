@@ -1,6 +1,6 @@
 # Java Competitive Programming Utils
 
-**A curated, battle-tested collection of reusable Java utilities, data structures, and algorithms for competitive programming.**
+**A curated, battle-tested collection of reusable Java utilities, configurations, data structures, and algorithms for competitive programming.**
 
 [![Java](https://img.shields.io/badge/Java-17%2B-orange?logo=openjdk)](https://www.oracle.com/java/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
