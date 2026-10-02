@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.function.Function;
 
 /**
- * Fast, buffered file I/O for test harnesses.
+ * Fast, efficient, buffered file I/O for test harnesses.
  *
  * - Reading uses FileReader, which only ever opens a file in read mode.
  *   It has no write capability, so input.txt can never be truncated or
