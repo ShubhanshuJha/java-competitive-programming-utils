@@ -53,6 +53,7 @@ public class Solution {
 
     static void solve() {
         // your actual solution logic (can recurse deeply here)
+        System.out.println("Hello");
     }
 }
 ```
